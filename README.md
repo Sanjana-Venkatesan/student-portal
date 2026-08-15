@@ -11,3 +11,9 @@ A professional web-based student portal that provides a centralized platform for
 - Student discussion posts
 - Comments and reactions
 - Browse recent discussions
+
+## Prerequisites
+
+- **Node.js (v18 or higher)**
+- **npm**
+- **Git**
