@@ -57,6 +57,7 @@ function Navbar() {
             Settings
           </Link>
         </li>
+        <li><Link to="/community">Community</Link></li>
       </ul>
     </nav>
   );
