@@ -14,10 +14,10 @@ function App() {
       color: "#1e293b",
     },
 
-    main: {
+     main: {
       maxWidth: "1200px",
       margin: "0 auto",
-      padding: "4rem 2rem",
+      padding: "2rem 1rem",
       textAlign: "center",
     },
 
