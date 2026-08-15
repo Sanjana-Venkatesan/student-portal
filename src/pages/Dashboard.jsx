@@ -6,7 +6,10 @@ function Dashboard() {
 
   return (
     <div className="dashboard-page">
-      <h2>Dashboard</h2>
+       <h2>Dashboard</h2>
+      <p className="welcome-msg">
+        Welcome back{user ? `, ${user.name}` : ""}!
+      </p>
     </div>
   );
 }
