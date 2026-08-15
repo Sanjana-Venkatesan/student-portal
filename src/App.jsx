@@ -38,7 +38,7 @@ function App() {
     <div style={styles.app}>
       <Navbar />
 
-      <main style={styles.main}>
+      <main className="app-content app-content--wide" style={styles.main}>
         <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/dashboard" element={<Dashboard />} />
