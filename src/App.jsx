@@ -46,10 +46,6 @@ function App() {
               <Route path="/settings" element={<Settings />} />
               <Route path="/community" element={<CommunityFeed />} />
         </Routes>
-        <h1 style={styles.title}>Student Portal</h1>
-        <p style={styles.text}>
-          Welcome to the Student Portal.
-        </p>
       </main>
     </div>
   );
