@@ -8,6 +8,14 @@ function Settings() {
   return (
     <div className="settings-page">
       <h2>Settings</h2>
+      <div className="setting-row">
+        <label>Dark Mode</label>
+        <input
+          type="checkbox"
+          checked={darkMode}
+          onChange={() => setDarkMode(!darkMode)}
+        />
+      </div>
     </div>
   );
 }
