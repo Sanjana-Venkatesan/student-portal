@@ -15,6 +15,12 @@ function Settings() {
           checked={darkMode}
           onChange={() => setDarkMode(!darkMode)}
         />
+        <label>Email Notifications</label>
+        <input
+          type="checkbox"
+          checked={notifications}
+          onChange={() => setNotifications(!notifications)}
+        />
       </div>
     </div>
   );
