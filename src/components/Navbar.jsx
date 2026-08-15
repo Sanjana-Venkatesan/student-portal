@@ -1,45 +1,65 @@
-import Navbar from "./components/Navbar.jsx";
+import { Link } from "react-router-dom";
 
-function App() {
+function Navbar() {
   const styles = {
-    app: {
-      minHeight: "100vh",
-      backgroundColor: "#f8fafc",
-      color: "#1e293b",
-    },
-
-    main: {
-      maxWidth: "1200px",
-      margin: "0 auto",
-      padding: "4rem 2rem",
-      textAlign: "center",
+    navbar: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "1rem 2rem",
+      backgroundColor: "#1e293b",
+      color: "white",
     },
 
     title: {
-      margin: 0,
-      fontSize: "2.25rem",
+      fontSize: "1.25rem",
       fontWeight: "600",
+      margin: 0,
     },
 
-    text: {
-      marginTop: "1rem",
-      fontSize: "1.1rem",
-      color: "#64748b",
+    links: {
+      display: "flex",
+      gap: "1.5rem",
+      listStyle: "none",
+      margin: 0,
+      padding: 0,
+    },
+
+    link: {
+      color: "white",
+      textDecoration: "none",
+      fontSize: "0.95rem",
     },
   };
 
   return (
-    <div style={styles.app}>
-      <Navbar />
+    <nav style={styles.navbar}>
+      <h1 style={styles.title}>Student Portal</h1>
 
-      <main style={styles.main}>
-        <h1 style={styles.title}>Student Portal</h1>
-        <p style={styles.text}>
-          Welcome to the Student Portal.
-        </p>
-      </main>
-    </div>
+      <ul style={styles.links}>
+        <li>
+          <Link to="/dashboard" style={styles.link}>
+            Dashboard
+          </Link>
+        </li>
+        <li>
+          <Link to="/community" style={styles.link}>
+            Community
+          </Link>
+        </li>
+        <li>
+          <Link to="/profile" style={styles.link}>
+            Profile
+          </Link>
+        </li>
+        <li>
+          <Link to="/settings" style={styles.link}>
+            Settings
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
-export default App;
+export default Navbar;

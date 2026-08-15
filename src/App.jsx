@@ -1,32 +1,43 @@
+import Navbar from "./components/Navbar.jsx";
+
 function App() {
   const styles = {
-    container: {
+    app: {
       minHeight: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
       backgroundColor: "#f8fafc",
       color: "#1e293b",
     },
 
+    main: {
+      maxWidth: "1200px",
+      margin: "0 auto",
+      padding: "4rem 2rem",
+      textAlign: "center",
+    },
+
     title: {
-      fontSize: "2rem",
-      fontWeight: "600",
       margin: 0,
+      fontSize: "2.25rem",
+      fontWeight: "600",
     },
 
     text: {
-      fontSize: "1rem",
+      marginTop: "1rem",
+      fontSize: "1.1rem",
       color: "#64748b",
-      marginTop: "0.75rem",
     },
   };
 
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Student Portal</h1>
-      <p style={styles.text}>Welcome to the Student Portal.</p>
+    <div style={styles.app}>
+      <Navbar />
+
+      <main style={styles.main}>
+        <h1 style={styles.title}>Student Portal</h1>
+        <p style={styles.text}>
+          Welcome to the Student Portal.
+        </p>
+      </main>
     </div>
   );
 }
