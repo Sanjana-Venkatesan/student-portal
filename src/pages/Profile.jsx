@@ -17,7 +17,19 @@ function Profile() {
           <p>{profile.bio}</p>
           <button onClick={() => setIsEditing(true)}>Edit Profile</button>
         </div>
-      ) : null}
+      ) : (
+        <div className="profile-edit">
+          <input
+            value={profile.name}
+            onChange={(e) => setProfile({ ...profile, name: e.target.value })}
+          />
+          <textarea
+            value={profile.bio}
+            onChange={(e) => setProfile({ ...profile, bio: e.target.value })}
+          />
+          <button onClick={() => setIsEditing(false)}>Save</button>
+        </div>
+      )}
     </div>
   );
 }
