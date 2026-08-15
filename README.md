@@ -49,3 +49,11 @@ Once the server starts, open the local URL displayed in the terminal. By default
 http://localhost:5173
 
 The application will automatically update in the browser when changes are made during development.
+
+## Contributing
+
+This is a lab exercise project built to demonstrate Git workflows. Feel free to fork and experiment.
+
+## License
+
+This project is for educational purposes.
