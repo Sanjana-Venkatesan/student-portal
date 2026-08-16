@@ -64,7 +64,6 @@ The application will automatically update in the browser when changes are made d
 
 The Student Portal uses a modular React structure with separate pages, application context, mock data, layouts, and utility functions.
 
-```text
 student-portal/
 ├── src/
 │   ├── components/
