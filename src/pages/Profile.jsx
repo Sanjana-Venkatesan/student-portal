@@ -11,6 +11,7 @@ function Profile() {
   return (
     <div className="profile-page">
       <h2>Profile</h2>
+      <p>Manage your student profile information.</p>
       {!isEditing ? (
         <div className="profile-view">
           <h3>{profile.name}</h3>
