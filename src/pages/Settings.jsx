@@ -8,6 +8,7 @@ function Settings() {
   return (
     <div className="settings-page">
       <h2>Settings</h2>
+      <p>Manage your account preferences below.</p>
       <div className="setting-row">
         <label>Dark Mode</label>
         <input
