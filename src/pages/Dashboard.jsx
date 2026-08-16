@@ -23,6 +23,10 @@ function Dashboard() {
           <h3>28</h3>
           <p>Likes Received</p>
         </div>
+        <div className="stat-card">
+          <h3>5</h3>
+          <p>Active Discussions</p>
+        </div>
       </div>
     </div>
   );
